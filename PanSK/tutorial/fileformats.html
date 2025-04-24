@@ -71,98 +71,73 @@
                 
 
 
-<ul class="summary">
+                    <ul class="summary">
     
     
     
         
-        <li>
-            <a href="https://chenym1.github.io/genetribe/" target="_blank" class="custom-link">Back Home</a>
-        </li>
-    
-    
-
-    
-    <li class="divider"></li>
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="./">
-            
-                <a href="./">
-            
+                        <li>
+                            <a href="https://zhangzhaoheng24.github.io/PanSK/" target="_blank" class="custom-link">Back Home</a>
+                        </li>
                     
-                    1 What is GeneTribe
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="installation.html">
-            
-                <a href="installation.html">
-            
                     
-                    2 Installation
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="quickstart.html">
-            
-                <a href="quickstart.html">
-            
+                
                     
-                    3 Quick Start
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.4" data-path="fileformats.html">
-            
-                <a href="fileformats.html">
-            
+                    <li class="divider"></li>
                     
-                    4 File Formats
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="homoinfer.html">
-            
-                <a href="homoinfer.html">
-            
+                
                     
-                    5 Homology Inference
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="other.html">
-            
-                <a href="other.html">
-            
+                        
+                        
                     
-                    6 Other Utilities
-            
-                </a>
+                        <li class="chapter " data-level="1.1" data-path="./">
+                            
+                                <a href="./">
+                            
+                                    
+                                    1 What is PanSK
+                            
+                                </a>
+                            
+                
+                            
+                        </li>
+                    
+                        <li class="chapter " data-level="1.2" data-path="installation.html">
+                            
+                                <a href="installation.html">
+                            
+                                    
+                                    2 Installation
+                            
+                                </a>
+                            
+                
+                            
+                        </li>
+                    
+                    
+                        <li class="chapter active" data-level="1.3" data-path="fileformats.html">
+                            
+                                <a href="fileformats.html">
+                            
+                                    
+                                    2 File Formats
+                            
+                                </a>
+                            
+                
+                            
+                        </li>
+                        <li class="chapter " data-level="1.4" data-path="quickstart.html">
+                            
+                            <a href="quickstart.html">
+                        
+                                
+                                3 USage
+                        
+                            </a>
+                        
             
 
             
@@ -170,14 +145,14 @@
     
 
     
-
+<!-- 
     <li class="divider"></li>
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
             Published with GitBook
         </a>
-    </li>
+    </li> -->
 </ul>
 
 
@@ -212,44 +187,51 @@
                                 
                                 <h1 id="4-file-formats">4 File Formats</h1>
 <p>Here we have described in detail the acquisition method and formats of the input files and the output files.</p>
-<h2 id="41-files-of-core-workflow">4.1 Files of Core Workflow</h2>
+<!-- <h2 id="41-files-of-core-workflow">4.1 Files of Core Workflow</h2> -->
 <h2 id="input-files">Input files</h2>
-<h3 id="file1-protein-sequences-in-fasta-format">File1 Protein Sequences in Fasta Format</h3>
+<h3 id="file1-protein-sequences-in-fasta-format">File1: k-mers file (.Fasta)</h3>
 <ol>
-<li>One of the input files of <strong>genetribe</strong> is <a href="https://en.wikipedia.org/wiki/FASTA_format" target="_blank">fasta</a> file that stores protein sequences.
+<!-- <li>One of the input files of <strong>genetribe</strong> is <a href="https://en.wikipedia.org/wiki/FASTA_format" target="_blank">fasta</a> file that stores protein sequences.
 You can obtain the fasta file from <a href="https://www.ensembl.org/" target="_blank">Ensembl</a> or <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>.
-Their file name is generally <code>name.pep.all.fa.gz</code>.</li>
-<li>We decompress them all using the command <code>gunzip name.pep.all.fa.gz</code>, and rename it as <code>name.fa</code>, <strong>genetribe</strong>  extracts longest transcript per gene as the representative sequence.</li>
-<li>Repeat the above steps for another genome.
-<br><strong>example:</strong><pre><code class="lang-sh">&gt;AT2G27490.4 pep chromosome:TAIR10:2:11748087:11749153:-1 gene:AT2G27490 transcript:AT2G27490.4 gene_biotype:protein_coding
-MRIVGLTGGIASGKSTVSNLFKASGIPVVDADVVARDVLKKGSGGWKRVVAAFGEEILLP
-SGEVDRPKLGQIVFSSDSKRQLLNKLMAPYISSGIFWEILKQWASGAKVIVVDIPLLFEV
-KMDKWTKPIVVVWVSQETQLKRLMERDGLSEEDARNRVMAQMPLDSKRSKADVVIDNNGS
-LDDLHQQFEKVLIEIRRPLTWIEFWRSRQGAFSVLGSVILGLSVCKQLKIGS
+Their file name is generally <code>name.pep.all.fa.gz</code>.</li> -->
+<!-- <li>We decompress them all using the command <code>gunzip name.pep.all.fa.gz</code>, and rename it as <code>name.fa</code>, <strong>genetribe</strong>  extracts longest transcript per gene as the representative sequence.</li>
+<li>Repeat the above steps for another genome. -->
+<br><strong>example:</strong><pre><code class="lang-sh">&gt;1
+ATCCGCAGCAGCCATATCCACAACAACCA
+>1
+AACAACAAGAACAACTCCCACAACAACTC
+>1
+ACATCATTGGCAAGGTCCGGAGTGCAATG
+>1
+GGCAATCGCTTTGTGGCCAGATTATCGAC
+>1
+CCAACTCCGGCGCCAACGCCGAATGGCAC
 </code></pre>
-Note:<br>In this example. <strong>genetribe</strong> uses headers <code>(i.e. &gt;AT2G27490.4 pep chromosome:TAIR10:2:11748087:11749153:-1 gene:AT2G27490 transcript:AT2G27490.4)</code> to distinguish sequences and extract longest transcript per gene. genetribe uses the ID that starts with <code>gene:</code> to get ID (i.e. AT2G27490). If this ID does not exist, genetribe uses the transcript ID (i.e. &gt;AT2G27490.4) split by the separator <code>.</code> to get ID. The separator is used to distinguish gene ID from transcript ID and specified by parameters <code>-s</code> in <code>genetribe core</code>.</li>
+<!-- Note:<br>In this example. <strong>genetribe</strong> uses headers <code>(i.e. &gt;AT2G27490.4 pep chromosome:TAIR10:2:11748087:11749153:-1 gene:AT2G27490 transcript:AT2G27490.4)</code> to distinguish sequences and extract longest transcript per gene. genetribe uses the ID that starts with <code>gene:</code> to get ID (i.e. AT2G27490). If this ID does not exist, genetribe uses the transcript ID (i.e. &gt;AT2G27490.4) split by the separator <code>.</code> to get ID. The separator is used to distinguish gene ID from transcript ID and specified by parameters <code>-s</code> in <code>genetribe core</code>.</li> -->
 </ol>
-<h3 id="file2-annotation-file-in-bed-format">File2 Annotation File in Bed Format</h3>
+<h3 id="file2-annotation-file-in-bed-format">File2: sequencing data (.Fastq or .Fastq.gz)</h3>
 <ol>
-<li>One of the input files of <strong>genetribe</strong> is <a href="https://en.wikipedia.org/wiki/BED_(file_format" target="_blank">bed</a>) file that stores annotation information. First, you can obtain the <a href="https://en.wikipedia.org/wiki/General_feature_format" target="_blank">gff</a> file from <a href="https://www.ensembl.org/" target="_blank">Ensembl</a> or <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>. Their file name is generally <code>name.gff3.gz</code>.</li>
+<!-- <li>One of the input files of <strong>genetribe</strong> is <a href="https://en.wikipedia.org/wiki/BED_(file_format" target="_blank">bed</a>) file that stores annotation information. First, you can obtain the <a href="https://en.wikipedia.org/wiki/General_feature_format" target="_blank">gff</a> file from <a href="https://www.ensembl.org/" target="_blank">Ensembl</a> or <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>. Their file name is generally <code>name.gff3.gz</code>.</li>
 <li>We decompress them all using the command <code>gunzip name.gff3.gz</code>, and rename it as <code>name.gff3</code>.</li>
 <li>We convert <code>gff</code> file to <code>bed</code> file that only contains gene information (i.e. the eighth column is &quot;gene&quot;). there are two ways to choose(of course, there are more ways):<br>
 MCscan + sed:<pre><code class="lang-sh">python -m jcvi.formats.gff bed --type=gene --key=ID name.gff3 -o name.bed
 sed -i <span class="hljs-string">&apos;s/gene://g&apos;</span> name.bed
 </code></pre>
 gff2bed + gawk + sed:<pre><code class="lang-sh">gff2bed &lt; name.gff3 | gawk -vOFS=<span class="hljs-string">&quot;\t&quot;</span> <span class="hljs-string">&apos;{if($8==&quot;gene&quot;)print $1,$2,$3,$4,$5,$6}&apos;</span> | sed <span class="hljs-string">&apos;s/gene://g&apos;</span> &gt; name.bed
+</code></pre> -->
+<strong>example:</strong><pre><code class="lang-sh">@A00164:490:HWTCWDSXX:2:1101:14877:1235 1:N:0:GGCTATAG+GTCCATCA
+TAGCAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAGCAGCAG
++
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:F:FFFFFFFFFFFFFFFFFF:FF:FFFFFFFFFFFFFFFF:FFFFFF:FFFFFFF:FFFFF,FFFFF,FFFFF,FF,FF,
+@A00164:490:HWTCWDSXX:2:1101:9263:1251 1:N:0:GGCTATAG+GTCCATCA
+TGGTGGTGGTGGTGGTGGTGGTGGTGGTGTTGGTGTTGCTGTTGCTGTAGTTGCTGCTGTTGTTGTTATTGTTGTTGTTGTTATTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGT
++
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:F:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,FFFFFFFFFFFFFF:FFF:FFF,FFF,
+@A00164:490:HWTCWDSXX:2:1101:9254:1266 1:N:0:GGCTATAG+GTCCATCA
+TGGTGGTGGTGGTGGTGGTGGTGGTGGTGTTGGTGTTGCTGTTGCTGTAGTTGCTGCTGTTGTTGTTATTGTTGTTGTTGTTATTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGGTGGTGG
+
 </code></pre>
-<strong>example:</strong><pre><code class="lang-sh">1       3630    5899    AT1G01010       0       +
-1       6787    9130    AT1G01020       0       -
-1       11648   13714   AT1G01030       0       -
-1       23120   31227   AT1G01040       0       +
-1       31169   33171   AT1G01050       0       -
-1       33364   37871   AT1G01060       0       -
-1       38443   41017   AT1G01070       0       -
-1       44969   47059   AT1G01080       0       -
-1       47233   49304   AT1G01090       0       -
-</code></pre>
-Each column is chromosome, start location, end location, gene ID, score, and strand.<br>Note:<br>For some annotations, the fourth column of <code>bed</code> contains some strings, such as <code>gene:</code>, <code>ID:</code>, etc., we should delete.
+<!-- Each column is chromosome, start location, end location, gene ID, score, and strand.<br>Note:<br>For some annotations, the fourth column of <code>bed</code> contains some strings, such as <code>gene:</code>, <code>ID:</code>, etc., we should delete.
 Number other than chromosome numbers should not appear in chromosome (S1.chr1 &#x2192; chr1)<h3 id="file3-chromosome-group-information">File3 Chromosome Group Information</h3>
 In this part, we should specify the chromosome name characteristics of each subgenome of the species genome, and name it <code>name.chrlist</code>.
 <br><strong>example:</strong><br>
@@ -280,70 +262,60 @@ TraesCS1A02G000200LC    LC
 TraesCS1A02G000300LC    LC
 </code></pre>
 </li>
+</ol> -->
+<h2 id="output-files">Output Files</h2>
+<!-- <center>Table 1. Output files of the core workflow</center> -->
+<h3 id="file1-protein-sequences-in-fasta-format">File1: All reads containing the input k-mer (.Fastq)</h3>
+<ol>
+<strong>example:</strong><pre><code class="lang-sh">@A00164:490:HWTCWDSXX:2:1101:14877:1235 1:N:0:GGCTATAG+GTCCATCA
+TAGCAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAGCAGCAG
++
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:F:FFFFFFFFFFFFFFFFFF:FF:FFFFFFFFFFFFFFFF:FFFFFF:FFFFFFF:FFFFF,FFFFF,FFFFF,FF,FF,
+@A00164:490:HWTCWDSXX:2:1101:9263:1251 1:N:0:GGCTATAG+GTCCATCA
+TGGTGGTGGTGGTGGTGGTGGTGGTGGTGTTGGTGTTGCTGTTGCTGTAGTTGCTGCTGTTGTTGTTATTGTTGTTGTTGTTATTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGT
++
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:F:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,FFFFFFFFFFFFFF:FFF:FFF,FFF,
+@A00164:490:HWTCWDSXX:2:1101:9254:1266 1:N:0:GGCTATAG+GTCCATCA
+TGGTGGTGGTGGTGGTGGTGGTGGTGGTGTTGGTGTTGCTGTTGCTGTAGTTGCTGCTGTTGTTGTTATTGTTGTTGTTGTTATTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGTTGGTGGTGG
+
+    </code></pre>
+<!-- <li>One of the input files of <strong>genetribe</strong> is <a href="https://en.wikipedia.org/wiki/FASTA_format" target="_blank">fasta</a> file that stores protein sequences.
+You can obtain the fasta file from <a href="https://www.ensembl.org/" target="_blank">Ensembl</a> or <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>.
+Their file name is generally <code>name.pep.all.fa.gz</code>.</li> -->
+<!-- <li>We decompress them all using the command <code>gunzip name.pep.all.fa.gz</code>, and rename it as <code>name.fa</code>, <strong>genetribe</strong>  extracts longest transcript per gene as the representative sequence.</li>
+<li>Repeat the above steps for another genome. -->
+<!-- <br><strong>example:</strong><pre><code class="lang-sh">&gt;>1
+ATCCGCAGCAGCCATATCCACAACAACCA
+>1
+AACAACAAGAACAACTCCCACAACAACTC
+>1
+ACATCATTGGCAAGGTCCGGAGTGCAATG
+>1
+GGCAATCGCTTTGTGGCCAGATTATCGAC
+>1
+CCAACTCCGGCGCCAACGCCGAATGGCAC
+</code></pre> -->
+<!-- Note:<br>In this example. <strong>genetribe</strong> uses headers <code>(i.e. &gt;AT2G27490.4 pep chromosome:TAIR10:2:11748087:11749153:-1 gene:AT2G27490 transcript:AT2G27490.4)</code> to distinguish sequences and extract longest transcript per gene. genetribe uses the ID that starts with <code>gene:</code> to get ID (i.e. AT2G27490). If this ID does not exist, genetribe uses the transcript ID (i.e. &gt;AT2G27490.4) split by the separator <code>.</code> to get ID. The separator is used to distinguish gene ID from transcript ID and specified by parameters <code>-s</code> in <code>genetribe core</code>.</li> -->
 </ol>
-<h2 id="output-files">Output Files</h2>
-<center>Table 1. Output files of the core workflow</center>
-
-<table>
-<thead>
-<tr>
-<th>Output files</th>
-<th>Contents  </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.one2many</td>
-<td>All homologous gene pairs, there are three columns of information, namely the gene in genome 1, the gene in genome 2 and the homolog match score (HMS)</td>
-</tr>
-<tr>
-<td>.one2one</td>
-<td>RBH+SBH, which contains four columns of information, namely the gene in genome 1, the gene in genome2, the homologous type (RBH/SBH) and the chromosome group of gene in genome 2</td>
-</tr>
-<tr>
-<td>.RBH</td>
-<td>Gene pairs belonging to the Reciprocal Best Hits</td>
-</tr>
-<tr>
-<td>.SBH</td>
-<td>Genes pairs belonging to the Single-side Best Hits, where RBH is not found but the best matching gene is found</td>
-</tr>
-<tr>
-<td>.singleton</td>
-<td>The genes with no homologous genes</td>
-</tr>
-</tbody>
-</table>
-<h2 id="42-files-of-sameassembly">4.2 Files of Sameassembly</h2>
-<p>Homolog inference for the same assembly</p>
-<h2 id="input-files">Input files</h2>
-<h3 id="file1-annotation-file-in-bed-format">File1 Annotation File in Bed Format</h3>
-<p>The file is the same as bed in <code>core</code>.</p>
-<h3 id="file2-length-of-genes">File2 Length of Genes</h3>
-<p>We can obtain it from <code>bed</code> using the following command (of course, there are more ways):</p>
-<pre><code class="lang-sh">cat name.bed | gawk -vOFS=<span class="hljs-string">&quot;\t&quot;</span> <span class="hljs-string">&apos;{print $4,$3-$2}&apos;</span> &gt; name.genelength
+<h3 id="file2-annotation-file-in-bed-format">File2: The counting of the occurrence frequency of k-mer (.txt)</h3>
+<ol>
+<!-- <li>One of the input files of <strong>genetribe</strong> is <a href="https://en.wikipedia.org/wiki/BED_(file_format" target="_blank">bed</a>) file that stores annotation information. First, you can obtain the <a href="https://en.wikipedia.org/wiki/General_feature_format" target="_blank">gff</a> file from <a href="https://www.ensembl.org/" target="_blank">Ensembl</a> or <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>. Their file name is generally <code>name.gff3.gz</code>.</li>
+<li>We decompress them all using the command <code>gunzip name.gff3.gz</code>, and rename it as <code>name.gff3</code>.</li>
+<li>We convert <code>gff</code> file to <code>bed</code> file that only contains gene information (i.e. the eighth column is &quot;gene&quot;). there are two ways to choose(of course, there are more ways):<br>
+MCscan + sed:<pre><code class="lang-sh">python -m jcvi.formats.gff bed --type=gene --key=ID name.gff3 -o name.bed
+sed -i <span class="hljs-string">&apos;s/gene://g&apos;</span> name.bed
 </code></pre>
-<h2 id="output-files">Output Files</h2>
-<center>Table 2. Output files of the genereibe sameassembly</center>
-
-<table>
-<thead>
-<tr>
-<th>Output files</th>
-<th>Contents  </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.one2many</td>
-<td>All gene pairs with overlapping positions, there are three columns of information, namely the gene in genome 1, the gene in genome 2 and the homolog match score (i.e. overlapping ratio)</td>
-</tr>
-<tr>
-<td>.one2one</td>
-<td>RBH+SBH, which contains three columns of information, namely the gene in genome 1, the gene in genome2 and the homologous type (RBH/SBH)</td>
-</tr>
-</tbody>
-</table>
+gff2bed + gawk + sed:<pre><code class="lang-sh">gff2bed &lt; name.gff3 | gawk -vOFS=<span class="hljs-string">&quot;\t&quot;</span> <span class="hljs-string">&apos;{if($8==&quot;gene&quot;)print $1,$2,$3,$4,$5,$6}&apos;</span> | sed <span class="hljs-string">&apos;s/gene://g&apos;</span> &gt; name.bed
+</code></pre> -->
+<strong>example:</strong><pre><code class="lang-sh">AAAAAAAACAACAACAACAACTATCGAGC   0
+AAAAAAACAACAACAACAACTATCGAGCC   1
+AAAAAAACACCCAACAACCACAACAAATC   0
+AAAAAAATTCATTTCAGATGCAGCCAAAC   2
+AAAAAACAACAACAACAACTATCGAGCCA   0
+AAAAAACACCCAACAACCACAACAAATCC   10
+AAAAAATAGGACAAGGGCAACAACCAGAA   0
+AAAAAATAGGACAAGGGCAACAACCAGGA   0
+</code></pre>
 
                                 
                                 </section>

@@ -71,98 +71,73 @@
                 
 
 
-<ul class="summary">
+                    <ul class="summary">
     
     
     
         
-        <li>
-            <a href="https://chenym1.github.io/genetribe/" target="_blank" class="custom-link">Back Home</a>
-        </li>
-    
-    
-
-    
-    <li class="divider"></li>
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="./">
-            
-                <a href="./">
-            
+                        <li>
+                            <a href="https://zhangzhaoheng24.github.io/PanSK/" target="_blank" class="custom-link">Back Home</a>
+                        </li>
                     
-                    1 What is GeneTribe
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="installation.html">
-            
-                <a href="installation.html">
-            
                     
-                    2 Installation
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.3" data-path="quickstart.html">
-            
-                <a href="quickstart.html">
-            
+                
                     
-                    3 Quick Start
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="fileformats.html">
-            
-                <a href="fileformats.html">
-            
+                    <li class="divider"></li>
                     
-                    4 File Formats
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="homoinfer.html">
-            
-                <a href="homoinfer.html">
-            
+                
                     
-                    5 Homology Inference
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="other.html">
-            
-                <a href="other.html">
-            
+                        
+                        
                     
-                    6 Other Utilities
-            
-                </a>
+                        <li class="chapter" data-level="1.1" data-path="./">
+                            
+                                <a href="./">
+                            
+                                    
+                                    1 What is PanSK
+                            
+                                </a>
+                            
+                
+                            
+                        </li>
+                    
+                        <li class="chapter " data-level="1.2" data-path="installation.html">
+                            
+                                <a href="installation.html">
+                            
+                                    
+                                    2 Installation
+                            
+                                </a>
+                            
+                
+                            
+                        </li>
+                    
+                    
+                        <li class="chapter " data-level="1.3" data-path="fileformats.html">
+                            
+                                <a href="fileformats.html">
+                            
+                                    
+                                    2 File Formats
+                            
+                                </a>
+                            
+                
+                            
+                        </li>
+                        <li class="chapter " data-level="1.4" data-path="quickstart.html">
+                            
+                            <a href="quickstart.html">
+                        
+                                
+                                3 USage
+                        
+                            </a>
+                        
             
 
             
@@ -171,13 +146,13 @@
 
     
 
-    <li class="divider"></li>
+    <!-- <li class="divider"></li>
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
             Published with GitBook
         </a>
-    </li>
+    </li> -->
 </ul>
 
 
@@ -210,41 +185,25 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="3-quick-start">3 Quick Start</h1>
-<p>We provide example files, stored in <code>test</code>, to help users quickly run <strong>genetribe</strong>.</p>
-<h2 id="31-core-workflow-using-fasta-bed-and-chrlist">3.1 Core Workflow Using .fasta, .bed, and .chrlist</h2>
-<pre><code class="lang-sh"><span class="hljs-built_in">cd</span> <span class="hljs-built_in">test</span>/
-../genetribe core <span class="hljs-_">-l</span> aet <span class="hljs-_">-f</span> rice
-2020-05-04 21:22:52 ...prepare files...
-2020-05-04 21:39:19 ...calculate BSR, CBS and Penalty...
-2020-05-04 21:40:07 ...evaluate optimal &#x3B1; <span class="hljs-keyword">for</span> weighting score...
-2020-05-04 21:41:05 ...&#x3B1; = 90...
-2020-05-04 21:41:05 ...merge raw score...
-2020-05-04 21:41:07 ...process all chromosome pairs...
-2020-05-04 21:41:07 ...number of rounds: 1 ...
-2020-05-04 21:41:11 ...merged results...
-2020-05-04 21:41:12 ...done!
+                                <h1 id="3-quick-start">3 Usage</h1>
+                                <h2 id="32-homology-inference-for-same-assembly-using-bed-and-genelength">Step 1: Generate the unique k-mer file of the gene of interest</h2>
+
+
+
+<pre><code class="lang-sh">jellyfish count<span class="hljs-_">-m</span> 29 (k-mer size) <span class="hljs-_">-s</span> 100M -t 10 -C -L 1 -U 1 -o kmerdb gene.squences.fa 
 </code></pre>
-<p><strong>genetribe</strong> will save the output files in the current working directory</p>
-<pre><code class="lang-sh">ls
-aet_rice.one2many   rice_aet.one2many     aet_rice.one2one
-rice_aet.one2one    aet_rice.RBH          aet_rice.SBH
-rice_aet.SBH        aet_rice.singleton    rice_aet.singleton
-aet_rice.block_pos  rice_aet.block_pos
+<p>jellyfish will generate unique k-mers hash file</p>
+<pre><code class="lang-sh">jellyfish dump <span class="hljs-_">kmerdb</span> -o <span class="hljs-_">kmerdb.fa </span> 
 </code></pre>
-<h2 id="32-homology-inference-for-same-assembly-using-bed-and-genelength">3.2 Homology Inference for Same Assembly Using .bed and .genelength</h2>
-<pre><code class="lang-sh"><span class="hljs-built_in">cd</span> <span class="hljs-built_in">test</span>/
-../genetribe sameassembly <span class="hljs-_">-l</span> IWGSCv1p1 <span class="hljs-_">-f</span> IWGSCv1
-2020-05-04 21:45:42 ...prepare files...
-2020-05-04 21:45:42 ...obtain overlap between genes...
-2020-05-04 21:45:42 ...calculate score...
-2020-05-04 21:45:42 ...generate RBH and SBH tables...
-2020-05-04 21:45:43 ...done!
+<p>TConvert the binary Hash result into a text file</p>
+<p>We provide example unique k-mer files <code>kmerdb.fa</code>and sequenceing data <code>test.fq</code>, to help users quickly run.</p>
+
+<h2 id="32-homology-inference-for-same-assembly-using-bed-and-genelength">Step 2: count the unique k-mer in sequenceing data</h2>
+<pre><code class="lang-sh"></code>./scan <span class="hljs-_">./kmerdb.fa</span>./test.fq<span class="hljs-_">./out.fq</span> out
 </code></pre>
-<p><strong>genetribe</strong> will save the output files in the current working directory</p>
-<pre><code class="lang-sh">ls
-IWGSCv1_IWGSCv1p1.one2many  IWGSCv1_IWGSCv1p1.one2one
-IWGSCv1p1_IWGSCv1.one2many  IWGSCv1p1_IWGSCv1.one2one
+<p>The output files will be saved in the current working directory</p>
+<pre><code class="lang-sh">out.fq      (All reads containing the input k-mer)
+out_mer_count.txt   (k-mer counts in sequenceing data)
 </code></pre>
 
                                 
